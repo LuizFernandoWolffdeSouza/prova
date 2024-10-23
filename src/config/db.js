@@ -1,7 +1,7 @@
 import mongoose from "mongoose"
 
 
-const conexão = () =>{
+const conexão = async () =>{
     mongoose
     .connect(`${process.env.URI}`)
     .then(() => console.log("Conexão com o mongo realizada com sucesso"))
